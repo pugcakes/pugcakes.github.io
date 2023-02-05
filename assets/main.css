@@ -1,0 +1,46 @@
+::selection {
+    background-color: rgba(41, 149, 225, 0.5);
+}
+@font-face {
+    font-family: "Cuprum";
+    src: url(../fonts/Cuprum.ttf);
+}
+body {
+    background: rgb(5, 5, 5);
+    color: rgb(240, 240, 240);
+    font-family: "Cuprum";
+    font-size: 17px;
+    padding: 0;
+    margin: 0;
+}
+a {
+    color: #e518ca;
+}
+a:hover {
+    color: rgba(229, 24, 202, 0.8);
+}
+hr {
+    /* background: linear-gradient(90deg, rgba(235,27,200,1) 0%, rgba(33,158,236,1) 100%); */
+    background: linear-gradient(90deg, rgba(235,27,200,1) 0%, rgba(33,205,236,1) 100%);
+    border: none;
+    height: 2px;
+    width: 45%;
+}
+/* ... */
+.page {
+    background-color: rgb(13, 12, 14);
+    margin: auto;
+    padding: 5px 15px;
+    min-height: 100vh; /* won't work without min */
+    width: 635px;
+    box-sizing: border-box;
+}
+/* for mobile */
+@media (max-width: 650px) {
+    body {
+        overflow-x: hidden;
+    }
+    .page {
+        width: 100%;
+    }
+}

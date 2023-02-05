@@ -1,0 +1,193 @@
+<!--
+	⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣿⢿⣧⠀⠀⣿⣿⣦⡀⠀⠀⠀	 ⢀⣾⡿⣷⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣤⣴⣿⡷⠾⠿⣶⣦⣿⡇⠙⢿⣦⡀⢀⣾⡟⠀⢹⣷⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣾⠟⠋⠁⠀⠀⠀⠀⠀⠈⠛⠛⠀⠀⠙⢿⣾⡟⠀⠀⠀⢿⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⢀⣼⡿⠁⠀⠀⠀⠀⠀⣀⡤⣤⣀⣀⠀⠀⢰⠲⣰⡿⠁⠀⠀⠀⢸⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⢀⣠⣿⠏⠀⠀⠀⠀⠀⡠⠊⠀⠀⠀⠀⠉⠉⠓⠚⠁⠻⣷⣤⣀⣀⣀⣸⣿⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⢿⣿⡿⠿⠛⠁⠀⠀⠀⢀⡠⠚⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠛⠛⠛⠋⠉⠻⣷⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠙⢿⣦⣀⠀⠀⠀⠀⠈⠓⠲⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠻⣷⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⣤⠀⠀⣠⣤⣽⣿⣷⣦⠀⠀⠀⣠⠖⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠻⣷⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⣿⠀⠀⠛⣿⣍⠉⠁⠀⠀⢀⡜⠁⠀⠀⠀⣀⡀⠀⢀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠻⣷⣄⠀⠀⠀⠀⠀⠀⠀⠀
+⠃⠀⠀⠀⠈⢿⣧⡀⠀⠀⠘⢦⡀⠀⠀⠘⠛⠛⠛⠛⠋⠀⠀⠺⠿⠿⠿⠷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠻⣷⣄⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠙⢿⣦⣄⣀⣸⡿⠀⠀⠀⠀⢠⣴⠀⠀⠀⠀⠀⠀⢀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⡀⠀⠀⠀⠈⠻⣷⡄⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠉⣿⡟⠋⠱⠄⠀⠀⠀⠚⠋⠀⠀⠀⠀⠀⠀⠻⠏⠀⠀⢠⡦⠀⠀⠀⠀⠀⠈⢻⡛⠿⣿⣿⠀⠀⠙⢿⣦⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⢿⣧⡈⠁⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠛⠾⠃⠀⠀⢀⣠⡤⠞⢁⣴⡿⠁⠀⠀⠀⠈⢻⣧⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⣿⣶⣄⡀⠘⠻⠇⠀⠀⠀⠀⠀⢀⣀⣀⡀⠀⠀⠀⠀⠀⠀⠀⣏⠀⣀⣤⣾⡏⠀⠀⠀⠀⠀⠀⠀⢻⣧⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢨⣿⠈⠙⠻⣿⣶⣦⣤⣠⣶⣿⠟⠛⠛⢻⣿⢀⣀⣀⣠⣤⣤⠤⠟⠀⠻⣿⣹⣷⠀⠀⠀⠀⠀⠀⠀⠀⢿⣇
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⡟⠀⠀⠀⢸⡇⠈⠹⣿⡟⠛⠛⣛⣻⣿⣿⣿⣿⣿⠟⢻⣿⣿⣿⠶⠶⠿⠿⢿⣧⠀⠀⠀⠀⠀⠀⠀⠸⣿
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣿⠃⠀⠀⠀⣿⡿⠶⠶⣿⣷⣾⢿⣟⣿⡏⠀⣾⠟⢻⣧⢸⣿⣿⠟⠀⠀⠀⠀⠈⢻⣧⠀⠀⠀⠀⠀⠀⠀⣿
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⡟⠀⠀⠀⣸⡿⠀⠀⣠⣿⣿⢻⣯⣿⡞⣿⣄⠻⣿⣿⣧⣤⣿⣿⣧⡀⠀⠀⠀⠀⠀⢿⣧⠀⠀⠀⠀⠀⢰⣿
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⠃⠀⠀⠀⣿⡿⠿⠿⢿⣿⣿⣿⣧⣾⣿⣾⠿⠟⠛⠋⠉⠁⠀⠈⠙⣿⣆⠀⠀⠀⠀⢸⣿⠀⠀⠀⠀⢀⣾⡇
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⠀⠀⠀⠀⢹⣇⠀⢠⣾⣿⡇⣼⣿⣠⣤⣿⣤⣾⣷⣶⠆⠀⠀⠀⠀⠘⣿⣆⠀⠀⢠⣿⠏⠀⠀⠀⢀⣾⡟⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣇⠀⠀⠀⠈⢿⣦⣿⣷⣿⠃⠙⠻⠟⠉⠉⠉⠛⠙⠛⠀⠀⠀⣀⠀⠀⠸⣿⣤⣾⠿⠋⠀⠀⢀⣴⡿⠋⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⣿⣆⠀⠀⠀⢀⣾⣿⡿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⡄⠀⠀⢹⣯⠁⠀⠀⠀⠀⠈⠛⣿⣆⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⣠⣶⠿⠃⠀⠀⠀⣼⡟⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⣧⠀⠀⠀⢿⣇⠀⢀⣿⣿⣿⣿⠛⠋⠀⣠
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>the spiritworld · zoxie</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- property display begin -->
+	<meta name="description" content="The personal website of just another nerd on the internet.">
+	<meta property="og:title" content="the spiritworld · zoxie">
+	<meta property="og:description" content="The personal website of just another nerd on the internet.">
+	<!-- <meta property="og:image" content="assets/preview.png"> -->
+	<meta name="keywords" content="personal, space, homestuck, personal website">
+	<meta name="twitter:card" content="summary_large_image">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+	<style>
+        ::selection {
+            background-color: rgba(41, 149, 225, 0.4);
+        }
+        @font-face {
+            font-family: "Cuprum";
+            src: url(fonts/Cuprum.ttf);
+        }
+        body {
+            /* background: rgb(5, 5, 5); */
+            background: url(https://i.postimg.cc/j24KVdGK/aquagalaxy-small.gif);
+            color: rgb(240, 240, 240);
+            font-family: 'Ubuntu Mono', monospace;
+            font-size: 16.5px;
+            padding: 0;
+            margin: 0;
+        }
+        a {
+            color: #5e90a1;
+        }
+        hr {
+            color: #5e90a1;
+            width: 45%;
+        }
+        /* ... */
+        .box {
+            background: #080c0e;
+            border: 3px solid transparent;
+			border-image: url("https://cdn.discordapp.com/attachments/874730519802294272/1018932923937849366/unknown.png") 30 stretch;
+            width: 65%;
+            padding: 1vh;
+            margin: auto;
+        }
+        /* for mobile */
+        @media (max-width: 650px) {
+            body {
+                overflow-x: hidden;
+            }
+            .page {
+                width: 100%;
+            }
+            img#neptez {
+                width: 85%;
+            }
+        }
+    </style>
+	<link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+	<!-- <link rel="icon" href="hotpfp.png" type="image/png"> --> <!-- may or may not replace favicon-->
+	<!-- scripts -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+	<script src="https://static.tumblr.com/lspzyz3/xloqk6cgp/jquery.style-my-tooltips.js"></script>
+</head>
+<body>
+	<div class="box">
+        <p>Hewwo :3</p>
+    </div>
+	<!-- other shit -->
+	<script>
+		// This is taken from https://codepen.io/pixelpush/pen/PxjKNP
+		var lastfmData = {
+		baseURL:
+			"https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=",
+		user: "pugcakes",
+		api_key: "1850dd4576544b2afd68b0faf7714e06",
+		additional: "&format=json&limit=1"
+		};
+
+		var getSetLastFM = function() {
+		jQuery.ajax({
+			type: "GET",
+			url:
+			lastfmData.baseURL +
+			lastfmData.user +
+			"&api_key=" +
+			lastfmData.api_key +
+			lastfmData.additional,
+			dataType: "json",
+			success: function(resp) {
+			var recentTrack = resp.recenttracks.track[0];
+			var formatted =
+				recentTrack.name;
+			jQuery("span#tracktitle")
+				.html(formatted)
+
+			var artistFormatted =
+				recentTrack.artist["#text"];
+			jQuery("span#trackartist")
+				.html(artistFormatted)
+				.attr("title", "Artist : " + recentTrack.artist["#text"]);
+			},
+		});
+		};
+		getSetLastFM();
+		setInterval(getSetLastFM, 10 * 100);
+	</script>
+</body>
+</html>
+<!-- <a rel="me" href="https://trollian.space/@zoxie">Mastodon</a> -->
+<!-- border: 3px solid transparent;
+			border-image: url("https://cdn.discordapp.com/attachments/874730519802294272/1018932923937849366/unknown.png") 30 stretch; - for the border..-->
+<!-- &brvbar; -->
+<!-- 
+	                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                  .                                .                      
+                                 :==:.    ...:::::::::::..       :==-                     
+                                .=====-+********************++--=====:                    
+                               .-===+++++++++++++++++++++++++*++++====                    
+                             -*#++++++**#*++++++++++++++++++*##*++++++                    
+                           -**++****####*++++++++++++++++++++*####****:                   
+                         .**++++**##***+++++==+++++++++++++==++***###*#:                  
+                        :#*+++++++++++++++++::-+++++++++++=::+++++++++#*                  
+                        **+++++++++++++++++++++++++=..:=+++++++++++++++#:                 
+                       :#++++++*#%%%#**+++++++++++*#++#**+++++++**#%%*+**                 
+                       :#++++*#@@@@*--=+*#*******+=-:::-=*#####%*-::*%***                 
+                       :#++++*%@@@+::::::*@@@@*:::::::::::+@@@@#:::::@#**                 
+                        #*+++*%@@@*:::::::+@@@:::::::::::::%@@+:::::*@#*-                 
+                        -#+++*%@@%@=::-::::-*@:::::::::::::%#-:::::-++**                  
+                         =#++*#@@*-=:++##****+-::::::::::::=+**+**#++##=                  
+                          -#*+*%@@*::*%+==#+@@#=+::::::::+=#+@@*==*%*%+                   
+                           .=**#@@@*::+*++*%%%*++::::::::++*%%%+++++%=                    
+                             .+##@@@*::::-==+-::::::::::::::-+==-:+%-                     
+                               :##@@@#::::::::::=+:-++::+=::::::=##.    :                 
+                            .-=+%#%@@@+::::::::::-+=::=+-::::-*%@@%--+#=                  
+                              :@@@@@@@@#+=-:::::::::::::-=*##*=@@@@@@=                    
+                              =#%@@@@@%#%@@@@%%%%%%%%%%%@%+    .=*#=                      
+                              ####%%###%@@@@@@@%@@@@@@%###-                               
+                             :####%####%@@@@@%@@@%@@@@%###-                               
+                             =#########%@@@@%#@@@%%@@@%##%-                               
+                             *#########%@@@%@%#@%%@@@@%###-                               
+                             ##########@@@@%%%@%%@@@@@%###-                               
+                            .##########@@@@@@@@@%%%@@@%%##=          :-:                  
+                           -*##########@@@@@@@@@@@@@@@%###*       .+*++**+                
+                        .=##%#########%%%%%%%%%%%%%%%%%%###------=#++***##+               
+                     :=*#*+###########%#############******####**##++*##*#*#               
+        .:---====+*#***++**############***********#######**++**##*+++****+#               
+      .#**+++++++++***####%##########%****************##++*+###*#+++*####**               
+      :=*++*##########################***************##+*##*##**#*++#####*                
+       :=+*########################*#****************#+++******##*+++***=                 
+       --=+*####################+-  .-+##***********#*+++*####**#=**+=-                   
+               ..::::=======-:.         .-=**#******#*++*#####*#-                         
+                                             .:=+*###*+++**+***:                          
+                                                    :-+*****+-                            
+                                                         .                                
+                                                                                          
+                                                                                          
+
+-->

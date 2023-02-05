@@ -1,0 +1,205 @@
+<!--
+	⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣿⢿⣧⠀⠀⣿⣿⣦⡀⠀⠀⠀	 ⢀⣾⡿⣷⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣤⣴⣿⡷⠾⠿⣶⣦⣿⡇⠙⢿⣦⡀⢀⣾⡟⠀⢹⣷⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣾⠟⠋⠁⠀⠀⠀⠀⠀⠈⠛⠛⠀⠀⠙⢿⣾⡟⠀⠀⠀⢿⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⢀⣼⡿⠁⠀⠀⠀⠀⠀⣀⡤⣤⣀⣀⠀⠀⢰⠲⣰⡿⠁⠀⠀⠀⢸⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⢀⣠⣿⠏⠀⠀⠀⠀⠀⡠⠊⠀⠀⠀⠀⠉⠉⠓⠚⠁⠻⣷⣤⣀⣀⣀⣸⣿⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⢿⣿⡿⠿⠛⠁⠀⠀⠀⢀⡠⠚⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠛⠛⠛⠋⠉⠻⣷⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠙⢿⣦⣀⠀⠀⠀⠀⠈⠓⠲⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠻⣷⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⣤⠀⠀⣠⣤⣽⣿⣷⣦⠀⠀⠀⣠⠖⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠻⣷⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⣿⠀⠀⠛⣿⣍⠉⠁⠀⠀⢀⡜⠁⠀⠀⠀⣀⡀⠀⢀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠻⣷⣄⠀⠀⠀⠀⠀⠀⠀⠀
+⠃⠀⠀⠀⠈⢿⣧⡀⠀⠀⠘⢦⡀⠀⠀⠘⠛⠛⠛⠛⠋⠀⠀⠺⠿⠿⠿⠷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠻⣷⣄⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠙⢿⣦⣄⣀⣸⡿⠀⠀⠀⠀⢠⣴⠀⠀⠀⠀⠀⠀⢀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⡀⠀⠀⠀⠈⠻⣷⡄⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠉⣿⡟⠋⠱⠄⠀⠀⠀⠚⠋⠀⠀⠀⠀⠀⠀⠻⠏⠀⠀⢠⡦⠀⠀⠀⠀⠀⠈⢻⡛⠿⣿⣿⠀⠀⠙⢿⣦⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⢿⣧⡈⠁⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠛⠾⠃⠀⠀⢀⣠⡤⠞⢁⣴⡿⠁⠀⠀⠀⠈⢻⣧⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⣿⣶⣄⡀⠘⠻⠇⠀⠀⠀⠀⠀⢀⣀⣀⡀⠀⠀⠀⠀⠀⠀⠀⣏⠀⣀⣤⣾⡏⠀⠀⠀⠀⠀⠀⠀⢻⣧⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢨⣿⠈⠙⠻⣿⣶⣦⣤⣠⣶⣿⠟⠛⠛⢻⣿⢀⣀⣀⣠⣤⣤⠤⠟⠀⠻⣿⣹⣷⠀⠀⠀⠀⠀⠀⠀⠀⢿⣇
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⡟⠀⠀⠀⢸⡇⠈⠹⣿⡟⠛⠛⣛⣻⣿⣿⣿⣿⣿⠟⢻⣿⣿⣿⠶⠶⠿⠿⢿⣧⠀⠀⠀⠀⠀⠀⠀⠸⣿
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣿⠃⠀⠀⠀⣿⡿⠶⠶⣿⣷⣾⢿⣟⣿⡏⠀⣾⠟⢻⣧⢸⣿⣿⠟⠀⠀⠀⠀⠈⢻⣧⠀⠀⠀⠀⠀⠀⠀⣿
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⡟⠀⠀⠀⣸⡿⠀⠀⣠⣿⣿⢻⣯⣿⡞⣿⣄⠻⣿⣿⣧⣤⣿⣿⣧⡀⠀⠀⠀⠀⠀⢿⣧⠀⠀⠀⠀⠀⢰⣿
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⠃⠀⠀⠀⣿⡿⠿⠿⢿⣿⣿⣿⣧⣾⣿⣾⠿⠟⠛⠋⠉⠁⠀⠈⠙⣿⣆⠀⠀⠀⠀⢸⣿⠀⠀⠀⠀⢀⣾⡇
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⠀⠀⠀⠀⢹⣇⠀⢠⣾⣿⡇⣼⣿⣠⣤⣿⣤⣾⣷⣶⠆⠀⠀⠀⠀⠘⣿⣆⠀⠀⢠⣿⠏⠀⠀⠀⢀⣾⡟⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣇⠀⠀⠀⠈⢿⣦⣿⣷⣿⠃⠙⠻⠟⠉⠉⠉⠛⠙⠛⠀⠀⠀⣀⠀⠀⠸⣿⣤⣾⠿⠋⠀⠀⢀⣴⡿⠋⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⣿⣆⠀⠀⠀⢀⣾⣿⡿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⡄⠀⠀⢹⣯⠁⠀⠀⠀⠀⠈⠛⣿⣆⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⣠⣶⠿⠃⠀⠀⠀⣼⡟⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⣧⠀⠀⠀⢿⣇⠀⢀⣿⣿⣿⣿⠛⠋⠀⣠
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> the spiritworld ¦ zoxie</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- property display begin -->
+	<meta name="description" content="The personal website of just another dorkus on the internet.">
+	<meta property="og:title" content="the spiritworld · zoxie">
+	<meta property="og:description" content="The personal website of just another dorkus on the internet.">
+	<!-- <meta property="og:image" content="assets/preview.png"> -->
+	<meta name="keywords" content="personal, space, homestuck, personal website">
+	<meta name="twitter:card" content="summary_large_image">
+	<link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <style>
+        ::selection {
+            background-color: rgba(41, 149, 225, 0.5);
+        }
+        @font-face {
+            font-family: "Atkinson";
+            src: url(fonts/AtkinsonHyperlegible.ttf);
+        }
+        body {
+            background: rgb(10, 10, 11);
+            color: rgb(240, 240, 240);
+            font-family: "Atkinson";
+            font-size: 16.5px;
+            padding: 1% 10% 3% 10%;
+        }
+        a {
+            color: rgb(240, 240, 240);
+            text-decoration: underline rgb(142, 142, 142) 1.5px;
+        }
+        hr {
+            /* background: linear-gradient(90deg, rgba(235,27,200,1) 0%, rgba(33,158,236,1) 100%); */
+            background: linear-gradient(90deg, rgba(235,27,200,1) 0%, rgba(33,205,236,1) 100%);
+            border: none;
+            height: 1.5px;
+            width: 45%;
+        }
+        span#gradient {
+            background-image: linear-gradient( 64.5deg,  rgba(235,27,200,1) 0%, rgba(33,205,236,1) 100% );
+            background-clip: text;
+            background-size: 300%;
+            background-position: left -50%;
+            color: transparent;
+            animation: gradient 4s infinite alternate;
+        }
+        /* animations */
+        @keyframes gradient {
+        30% {
+            background-position: right -50%;
+        }
+        70% {
+            background-position: top;
+        }
+        }
+        /* for mobile */
+        @media (max-width: 650px) {
+            body {
+                overflow-x: hidden;
+            }
+            #neptez {
+                width: 95%;
+            }
+        }
+    </style>
+	<!-- <link rel="icon" href="hotpfp.png" type="image/png"> --> <!-- may or may not replace favicon-->
+	<!-- scripts -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+	<script src="https://static.tumblr.com/lspzyz3/xloqk6cgp/jquery.style-my-tooltips.js"></script>
+</head>
+    <hr>
+    <img src="img/holdinhands.jpg" width="400" id="neptez" alt="A Nepeta and Terezi plushie holding hands infront of a laptop">
+	<p>Hello!! Welcome to my space, I am <span id="gradient">Zoxie / Jude / Nepeta</span> and i'm just another dorkus on the internet :3 <img src="img/neppyslep.png" alt="neppy slep" width="35" style="margin-bottom: -3px;"></p>
+    <p>This lil space is my home on the web where I can be myself</p>
+    <div class="nowplaying">
+		<div class="info"><p>I last listened to <span id="tracktitle"></span> by <span id="trackartist"></span>.</p></div>
+	</div>
+    <div style="text-align: center;">
+        <a href="https://code.visualstudio.com"><img src="img/vscode.gif" alt="vscode"></a>
+        <img src="img/twopaws.png" alt="made with my own two paws">
+        <a href="jade.html"><img src="img/jade.png" alt="jade harley now!"></a>
+    </div>
+    <hr>
+    <!-- other shit -->
+	<script>
+		// This is taken from https://codepen.io/pixelpush/pen/PxjKNP
+		var lastfmData = {
+		baseURL:
+			"https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=",
+		user: "pugcakes",
+		api_key: "1850dd4576544b2afd68b0faf7714e06",
+		additional: "&format=json&limit=1"
+		};
+
+		var getSetLastFM = function() {
+		jQuery.ajax({
+			type: "GET",
+			url:
+			lastfmData.baseURL +
+			lastfmData.user +
+			"&api_key=" +
+			lastfmData.api_key +
+			lastfmData.additional,
+			dataType: "json",
+			success: function(resp) {
+			var recentTrack = resp.recenttracks.track[0];
+			var formatted =
+				recentTrack.name;
+			jQuery("span#tracktitle")
+				.html(formatted)
+
+			var artistFormatted =
+				recentTrack.artist["#text"];
+			jQuery("span#trackartist")
+				.html(artistFormatted)
+				.attr("title", "Artist : " + recentTrack.artist["#text"]);
+			},
+		});
+		};
+		getSetLastFM();
+		setInterval(getSetLastFM, 10 * 100);
+	</script>
+</body>
+</html>
+<!-- <a rel="me" href="https://trollian.space/@zoxie">Mastodon</a> -->
+<!-- border: 3px solid transparent;
+			border-image: url("https://cdn.discordapp.com/attachments/874730519802294272/1018932923937849366/unknown.png") 30 stretch; - for the border..-->
+<!-- 
+	                                                                                          
+                                                                                          
+                                                                                          
+                                                                                          
+                                  .                                .                      
+                                 :==:.    ...:::::::::::..       :==-                     
+                                .=====-+********************++--=====:                    
+                               .-===+++++++++++++++++++++++++*++++====                    
+                             -*#++++++**#*++++++++++++++++++*##*++++++                    
+                           -**++****####*++++++++++++++++++++*####****:                   
+                         .**++++**##***+++++==+++++++++++++==++***###*#:                  
+                        :#*+++++++++++++++++::-+++++++++++=::+++++++++#*                  
+                        **+++++++++++++++++++++++++=..:=+++++++++++++++#:                 
+                       :#++++++*#%%%#**+++++++++++*#++#**+++++++**#%%*+**                 
+                       :#++++*#@@@@*--=+*#*******+=-:::-=*#####%*-::*%***                 
+                       :#++++*%@@@+::::::*@@@@*:::::::::::+@@@@#:::::@#**                 
+                        #*+++*%@@@*:::::::+@@@:::::::::::::%@@+:::::*@#*-                 
+                        -#+++*%@@%@=::-::::-*@:::::::::::::%#-:::::-++**                  
+                         =#++*#@@*-=:++##****+-::::::::::::=+**+**#++##=                  
+                          -#*+*%@@*::*%+==#+@@#=+::::::::+=#+@@*==*%*%+                   
+                           .=**#@@@*::+*++*%%%*++::::::::++*%%%+++++%=                    
+                             .+##@@@*::::-==+-::::::::::::::-+==-:+%-                     
+                               :##@@@#::::::::::=+:-++::+=::::::=##.    :                 
+                            .-=+%#%@@@+::::::::::-+=::=+-::::-*%@@%--+#=                  
+                              :@@@@@@@@#+=-:::::::::::::-=*##*=@@@@@@=                    
+                              =#%@@@@@%#%@@@@%%%%%%%%%%%@%+    .=*#=                      
+                              ####%%###%@@@@@@@%@@@@@@%###-                               
+                             :####%####%@@@@@%@@@%@@@@%###-                               
+                             =#########%@@@@%#@@@%%@@@%##%-                               
+                             *#########%@@@%@%#@%%@@@@%###-                               
+                             ##########@@@@%%%@%%@@@@@%###-                               
+                            .##########@@@@@@@@@%%%@@@%%##=          :-:                  
+                           -*##########@@@@@@@@@@@@@@@%###*       .+*++**+                
+                        .=##%#########%%%%%%%%%%%%%%%%%%###------=#++***##+               
+                     :=*#*+###########%#############******####**##++*##*#*#               
+        .:---====+*#***++**############***********#######**++**##*+++****+#               
+      .#**+++++++++***####%##########%****************##++*+###*#+++*####**               
+      :=*++*##########################***************##+*##*##**#*++#####*                
+       :=+*########################*#****************#+++******##*+++***=                 
+       --=+*####################+-  .-+##***********#*+++*####**#=**+=-                   
+               ..::::=======-:.         .-=**#******#*++*#####*#-                         
+                                             .:=+*###*+++**+***:                          
+                                                    :-+*****+-                            
+                                                         .                                
+                                                                                          
+                                                                                          
+
+-->
