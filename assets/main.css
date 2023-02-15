@@ -3,7 +3,7 @@
 }
 @font-face {
     font-family: "Atkinson";
-    src: url(fonts/AtkinsonHyperlegible.ttf);
+    src: url(../fonts/AtkinsonHyperlegible.ttf);
 }
 body {
     background: rgb(10, 10, 11);
@@ -11,10 +11,6 @@ body {
     font-family: "Atkinson";
     font-size: 16.5px;
     padding: 1% 10% 2% 10%;
-}
-a {
-    color: rgb(240, 240, 240);
-    text-decoration: underline rgb(142, 142, 142) 1.5px;
 }
 hr {
     background: linear-gradient(90deg, rgba(235,27,200,1) 0%, rgba(33,205,236,1) 100%);
